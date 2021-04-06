@@ -1,0 +1,199 @@
+/* Gotham Book font */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('../font/gothamFont/gothambook-webfont.woff2') format('woff2'),
+         url('../font/gothamFont/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Gotham Book';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 95vh;
+  color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  min-height: 95vh;
+}
+
+/* header style */
+.header {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.header * {
+  display: inline-block;
+  color: white;
+}
+
+.header-left-side {
+  float: left;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  background-color: black;
+  line-height: 3rem;
+  font-size: 16px;
+}
+
+.header-right-side {
+  float: right;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  line-height: 3rem;
+  width: 50%;
+  text-align: right;
+  background-color: black;
+}
+
+.header-left-side h2 {
+  margin-left: 48px;
+}
+
+.header-right-side h2 {
+  margin-right: 48px;
+}
+
+.header-right-side h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.item {
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+/* product style */
+.product {
+  width: 75%;
+  min-height: 40vh;
+  margin-left: 12.5%;
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+}
+
+.emptyPage {
+  width: 75%;
+  min-height: 40vh;
+  margin-left: 12.5%;
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 90vh;
+  font-size: 24px;
+}
+
+.homePageLink {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.homePageLink:hover {
+  border-bottom: 2px solid black;
+}
+
+.product-image {
+  width: 400px;
+  height: 600px;
+  margin-left: 15%;
+}
+
+.information {
+  margin: 48px;
+  margin-left: 15%;
+  width: 400px;
+  padding: 24px;
+  height: 552px;
+}
+
+.information * {
+  margin-left: 12px;
+}
+
+.buttons * {
+  display: inline;
+  margin: 12px;
+  margin-top: 36px;
+}
+
+.decrease-amount {
+  margin-left: 0px;
+}
+
+.amountBtn {
+  border: none;
+  outline: none;
+  background: white;
+  border: 1px solid black;
+  width: 36px;
+  height: 36px;
+  transition: 250ms;
+}
+
+.amountBtn:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: 250ms;
+}
+
+.add-div {
+  width: 376px;
+  margin-top: 36px;
+  margin-left: 12px;
+  font-size: 24px;
+  height: 5rem;
+  background-color: white;
+  border: 1px solid black;
+  outline: none;
+  transition: 250ms;
+}
+
+.add-div:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+/* footer style */
+.footer {
+  clear: both;
+  margin-top: 24px;
+  width: 100%;
+  line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  top: 5%;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.name:hover {
+  border-bottom: 2px solid white;
+}

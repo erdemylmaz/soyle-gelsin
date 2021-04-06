@@ -1,0 +1,166 @@
+/* Gotham Book font */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('./font/gothamFont/gothambook-webfont.woff2') format('woff2'),
+         url('./font/gothamFont/gothambook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: 'Gotham Book';
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 95vh;
+  color: #222222;
+}
+
+.App {
+  width: 100%;
+  min-height: 95vh;
+}
+
+.header {
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.header * {
+  display: inline-block;
+  color: white;
+}
+
+.header-left-side {
+  float: left;
+  position: fixed;
+  top: 0;
+  width: 50%;
+  background-color: black;
+  line-height: 3rem;
+  font-size: 16px;
+}
+
+.header-right-side {
+  float: right;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  line-height: 3rem;
+  width: 50%;
+  text-align: right;
+  background-color: black;
+}
+
+.header-left-side h2 {
+  margin-left: 48px;
+}
+
+.header-right-side h2 {
+  margin-right: 48px;
+}
+
+.header-right-side h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.item {
+  margin-left: 24px;
+  text-decoration: none;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.products {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  min-height: 110vh;
+}
+
+.product {
+  padding: 0px;
+  width: 400px;
+  height: 550px;
+  margin: 24px;
+}
+
+.product-add {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 100px;
+  width: 400px;
+  background: #131313;
+  color: white;
+  position: absolute;
+  margin-top: 400px;
+}
+
+.product:hover .product-add {
+  display: flex;
+  transition: 250ms;
+}
+
+.product:hover img {
+  z-index: -1;
+  position: absolute;
+}
+
+.product:hover .product-footer {
+  margin-top: 503px;
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.product:hover {
+  cursor: pointer;
+}
+
+.product-footer {
+  display: flex;
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  font-size: 24px;
+  color: #222222;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  clear: both;
+  margin-top: 24px;
+  width: 100%;
+  line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  top: 5%;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.name:hover {
+  border-bottom: 2px solid white;
+}

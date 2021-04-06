@@ -1,0 +1,143 @@
+.cart {
+  margin-top: 10rem;
+  width: 80%;
+  margin-left: 10%;
+}
+/*  */
+.left-side {
+  width: 50%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  float: left;
+  display: flex;
+}
+
+.product-name {
+  min-width: 10px;
+  margin-left: 36px;
+  text-transform: capitalize;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.right-side {
+  text-align: right;
+  width: 50%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 125px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 250px;
+  height: 125px;
+}
+
+.product-total-price {
+  width: 150px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 25%;
+}
+
+.buttons {
+  width: 300px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountBtn, .delete {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  background: white;
+  border: 1px solid black;
+  transition: 125ms;
+  font-size: 12px;
+}
+
+.amountBtn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transiton: 125ms;
+}
+
+.delete:hover {
+  background-color: red;
+  color: black;
+  cursor: pointer;
+}
+
+.product-amount {
+  width: 50px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item {
+  clear: both;
+  padding: 0px;
+}
+
+/* total */
+.total {
+  clear: both;
+  width: 100%;
+  text-align: right;
+}
+
+.total-hr {
+  border: none;
+  width: 75%;
+  margin-left: 10%;
+  background: black;
+  height: 1px;
+}
+
+.total-cart-amount {
+  margin-right: 20%;
+}
+
+.footer {
+  width: 100%;
+  line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  top: 5%;
+}
+
+.name {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.name:hover {
+  border-bottom: 2px solid white;
+}
