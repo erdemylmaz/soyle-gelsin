@@ -10,8 +10,22 @@ const buttons = document.querySelectorAll('.amountBtn');
 const addBtn = document.querySelector('.add-div');
 const successfulDiv = document.querySelector('.successful');
 
-if(localStorage.getItem('product') != "") {
 
+goToTag = (e) => {
+  var tag = e.target.textContent.toLowerCase();
+
+  localStorage.setItem('tag', tag);
+}
+
+const tagLinks = document.querySelectorAll('.item');
+tagLinks.forEach((link) => {
+  link.href = "../tag/tag.html";
+
+  link.addEventListener('click', goToTag);
+})
+
+
+if(localStorage.getItem('product') != "") {
   class Product {
     product = JSON.parse(localStorage.getItem('product'));
 

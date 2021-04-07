@@ -1,4 +1,6 @@
 const productsArea = document.querySelector('.products');
+const tagLinks = document.querySelectorAll('.item');
+
 if(!localStorage.getItem('cart')){
   localStorage.setItem('cart', JSON.stringify([]));
 }
@@ -11,37 +13,37 @@ class App {
       name: 'iPhone',
       price: '1000',
       tag: 'technology',
-      information: 'this is new iphone',
+      information: 'This is new iphone',
     },
     {
       name: 'AtomicHabits',
       price: '40',
       tag: 'book',
-      information: 'this is new iphone',
+      information: 'Best book for self groving',
     },
     {
       name: 't-shirt',
       price: '50',
       tag: "accessories",
-      information: 'this is new iphone',
+      information: 'Basic SpaceX t-shirt',
     },
     {
       name: 'Macbook',
       price: '1300',
       tag: "technology",
-      information: 'this is new iphone',
+      information: 'Best laptop for programmin',
     },
     {
       name: 'Watch',
       price: '2000',
       tag: "accessories",
-      information: 'this is new iphone',
+      information: 'Smart watch',
     },
     {
       name: 'iPad',
       price: '350',
       tag: "technology",
-      information: 'this is new iphone',
+      information: 'Best technologic product for home school',
     },
     {
       name: 'iPhone',
@@ -372,6 +374,12 @@ class App {
         });
       };
   }
+
+  goToTag = (e) => {
+    var tag = e.target.textContent.toLowerCase();
+
+    localStorage.setItem('tag', tag);
+  }
 }
 
 const app = new App();
@@ -405,6 +413,12 @@ const products = document.querySelectorAll('.product');
 products.forEach((product) => {
   product.addEventListener('click', app.addToCart);
 });
+
+tagLinks.forEach((link) => {
+  link.href = "./tag/tag.html";
+
+  link.addEventListener('click', app.goToTag);
+})
 
 // set current cart item's amount
 const cartAmountArea = document.querySelector('.cart-product-count');

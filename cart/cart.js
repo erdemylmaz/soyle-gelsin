@@ -5,7 +5,25 @@ if(!localStorage.getItem('cart')) {
   localStorage.setItem('cart', JSON.stringify([]));
 }
 
+
+goToTag = (e) => {
+  var tag = e.target.textContent.toLowerCase();
+
+  localStorage.setItem('tag', tag);
+}
+
+const tagLinks = document.querySelectorAll('.item');
+tagLinks.forEach((link) => {
+  link.href = "../tag/tag.html";
+
+  link.addEventListener('click', goToTag);
+})
+
+
 if(JSON.parse(localStorage.getItem('cart')).length != 0) {
+
+
+
   const cart = JSON.parse(localStorage.getItem('cart'));
   let totalCartPrice = 0;
 
