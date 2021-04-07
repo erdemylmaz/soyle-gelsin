@@ -23,33 +23,41 @@ body {
 
 .header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  line-height: 5rem;
   text-transform: uppercase;
+  background: black;
 }
 
 .header * {
-  display: inline-block;
   color: white;
 }
 
 .header-left-side {
   float: left;
-  position: fixed;
-  top: 0;
-  width: 50%;
   background-color: black;
-  line-height: 3rem;
   font-size: 16px;
+}
+
+.header-left-side * {
+  display: inline;
+  text-decoration: none;
 }
 
 .header-right-side {
   float: right;
-  position: fixed;
-  top: 0;
-  left: 50%;
   line-height: 3rem;
-  width: 50%;
-  text-align: right;
   background-color: black;
+}
+
+.header-left-side a {
+  display: inline;
+}
+
+li {
+  display: inline;
 }
 
 .header-left-side h2 {
