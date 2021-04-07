@@ -44,7 +44,7 @@ if(JSON.parse(localStorage.getItem('cart')).length != 0) {
       deleteBtn.addEventListener('click', (e) => {
         const productDiv = e.target.parentElement.parentElement;
         const productName = e.target.parentElement.parentElement.firstElementChild.firstElementChild.nextElementSibling.textContent;
-        
+
         cartArea.removeChild(productDiv);
 
         for(let x = 0; x < cart.length; x++) {

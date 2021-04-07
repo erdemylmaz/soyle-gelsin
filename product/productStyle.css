@@ -197,3 +197,24 @@ body {
 .name:hover {
   border-bottom: 2px solid white;
 }
+
+.successful {
+  width: 350px;
+  margin-top: 12px;
+  padding: 13px;
+  line-height: 3rem;
+  font-size: 14px;
+  color: white;
+  background: #64BC26;
+  display: none;
+}
+
+.cart-link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+.cart-link:hover {
+  border-bottom: 2px solid white;
+}
